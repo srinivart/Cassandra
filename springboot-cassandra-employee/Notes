@@ -1,0 +1,31 @@
+describe keyspaces;
+company
+
+use company;
+
+describe tables;
+employee
+
+
+cqlsh:company> select * from employee;
+
+ id | designation | name  | salary
+----+-------------+-------+--------
+  1 |   Developer | srini |  65000
+  2 |          QA |  sahi |  85000
+  3 |   Architect |  teju |  95000
+
+(3 rows)
+
+
+
+
+
+readFromTable
+-------------
+
+Employee{id=1, name='srini', designation='Developer', salary=65000}
+Employee{id=2, name='sahi', designation='QA', salary=85000}
+Employee{id=3, name='teju', designation='Architect', salary=95000}
+
+
